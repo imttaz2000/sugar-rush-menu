@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Rush | Retro Dessert Diner</title>
+    <style>
+        header {
+            background-image: url('images/dessert_pattern_tile.png');
+            background-repeat: repeat;
+            background-size: 300px;
+            background-color: rgba(255, 192, 203, 0.85);
+            background-blend-mode: lighten;
+
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 16px 32px;
+            gap: 16px;
+        }
+
+        nav a {
+            background: none;
+            color: #d63384;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+
+
+        #header-img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+
+        }
+
+
+        section#menu {
+            background-color: #fff0f5;
+            padding: 32px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        article {
+            background-color: #ffe4e1;
+            padding: 16px;
+            margin-bottom: 24px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 12px;
+
+        }
+
+        article img {
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            margin-bottom: 12px;
+
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #e75480;
+            margin-top: 12px;
+
+
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 12px;
+
+        }
+
+        section#order-form {
+            background-color: #f8f8ff;
+            padding: 32px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        form label {
+            display: block;
+            margin-top: 16px;
+            font-weight: bold;
+        }
+
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 8px;
+
+        }
+
+        input[type="submit"] {
+            margin-top: 24px;
+            padding: 12px 24px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 16px;
+            background-color: #ffe4e1;
+            font-size: 14px;
+            border-top: 1px solid #ffb6c1;
+
+
+        }
+
+        body {
+
+            font-family: 'Comic Sans MS', cursive;
+            background-image: url('images/dessert_pattern_tile.png');
+            background-repeat: repeat;
+            background-size: 300px;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        section#menu h2 {
+            width: 100%;
+            text-align: center;
+            font-size: 32px;
+            color: #e75480;
+            margin-bottom: 32px;
+            font-family: 'Comic Sans MS', cursive;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 3px solid #e75480;
+            padding-bottom: 8px;
+        }
+
+
+        section#order-form h2 {
+            text-align: center;
+            font-size: 28px;
+            color: #e75480;
+            margin-bottom: 24px;
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        article:hover {
+            transform: scale(1.03);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <a href="#menu">View Menu</a>
+            <a href="#order-form">Place Your Order</a>
+        </nav>
+
+        <img id="header-img" src="images/header_img.png"
+            alt="Sugar Rush logo with pastel ice cream, milkshake, and donut in retro diner style.">
+
+    </header>
+
+    <section id="menu">
+        <h2>Menu</h2>
+
+        <article>
+            <img src="images/classic_sundae_stack.png"
+                alt="Triple scoop sundae with vanilla, chocolate, and strawberry ice cream in a retro glass dish, topped with whipped cream and a cherry.">
+            <h3>Classic Sundae Stack</h3>
+            <p>A tall triple-scoop sundae with vanilla, chocolate, and strawberry ice cream, topped with whipped cream,
+                fudge drizzle, and a bright red cherry.
+                <em>£4.50</em>
+            </p>
+        </article>
+
+        <article>
+            <img src="images/donut_carousel.png"
+                alt="Six mini donuts with colourful frosting and sprinkles, arranged in a circle on a pastel plate.">
+            <h3>Donut Carousel</h3>
+            <p>A colourful assortment of six mini donuts with chocolate, raspberry, and vanilla glaze. Served in a
+                playful spiral that’s perfect for sharing. <em>£5.00</em></p>
+        </article>
+
+        <article>
+            <img src="images/confetti_cheesecake.png"
+                alt="Slice of vanilla cheesecake with rainbow sprinkles and strawberry drizzle on a pastel plate.">
+            <h3>Confetti Cheesecake</h3>
+            <p>A creamy slice of vanilla cheesecake with a crumbly biscuit base, topped with rainbow sprinkles and a
+                sweet swirl of strawberry sauce.
+                <em>£4.80</em>
+            </p>
+        </article>
+
+    </section>
+
+    <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form>
+
+
+            <label for="sundae">How many Classic Sundae Stacks?</label>
+            <input type="number" id="sundae" name="sundae" min="0">
+
+            <label for="donuts">How many Donut Carousels?</label>
+            <input type="number" id="donuts" name="donuts" min="0">
+
+            <label for="cheesecake">How many Confetti Cheesecakes?</label>
+            <input type="number" id="cheesecake" name="cheesecake" min="0">
+
+
+            <p>Add Extras:</p>
+            <label><input type="checkbox" name="extras" value="whipped-cream"> Extra Whipped Cream</label>
+            <label><input type="checkbox" name="extras" value="cherry"> Add a Cherry on Top</label>
+            <label><input type="checkbox" name="extras" value="gluten-free"> Gluten-Free Option</label>
+            <label><input type="checkbox" name="extras" value="sprinkles"> Rainbow Sprinkles</label>
+
+
+            <label for="requests">Any special requests or allergies?</label>
+            <textarea id="requests" name="requests" placeholder="Type your notes here..."></textarea>
+
+
+            <input type="submit" value="Go to Checkout">
+
+        </form>
+    </section>
+
+    <footer>
+        <p>Made with love by Tasnia</p>
+    </footer>
+</body>
+
+</html>
